@@ -62,6 +62,15 @@ header {
     background-size: cover;
 }
 
+@keyframes emergence {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
 
 /* Hamburger menu */
 
@@ -227,6 +236,7 @@ nav a {
 }
 
 .subtitle {
+    position: relative;
     font-family: 'Bebas Neue', cursive;
     text-align: center;
     color: #AE0F0A;
@@ -236,15 +246,18 @@ nav a {
     line-height: 30px;
     font-style: normal;
     font-weight: bold;
+    animation: emergence 1.5s ease-in-out;
 }
 
 h1 {
+    position: relative;
     font-family: 'Averta Demo PE', sans-serif;
     font-weight: 600;
     font-size: 60px;
     line-height: 133%;
     text-align: center;
     color: #FFFFFF;
+    animation: emergence 1.5s ease-in-out;
 }
 
 h2 {
@@ -298,7 +311,18 @@ h2 {
     margin: 4% 0% 1%;
 }
 
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .center div {
+    position: relative;
+    animation: opacity 3s ease-in-out;
     margin-top: 30px;
     width: 440px;
 }
@@ -380,7 +404,17 @@ a.next:hover {
     background-color: #EDD6BC;
 }
 
+@keyframes emergence-2 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 5%;
+    }
+}
+
 .slider_control {
+    animation: emergence-2 3s ease-in-out;
     position: relative;
     width: 505px;
     height: 610px;
@@ -424,6 +458,8 @@ a.next:hover {
 }
 
 .features .bg-kitchen {
+    animation: opacity 3s ease-in-out;
+    animation-delay: 2s;
     position: absolute;
     background-image: url(../img/bg-kitchen.png);
     background-size: cover;
@@ -435,6 +471,7 @@ a.next:hover {
 }
 
 .features .bg-bottles {
+    animation: opacity 1s ease-in;
     position: absolute;
     background-image: url(../img/bg-bottles.png);
     width: 541px;
@@ -453,6 +490,9 @@ a.next:hover {
 }
 
 .menu .content {
+    position: relative;
+    animation: emergence 2s ease-in-out;
+    animation-delay: 2s;
     padding: 100px 34% 35px 152px;
 }
 
@@ -521,14 +561,17 @@ a.next:hover {
 }
 
 .reviews .content {
+    animation: emergence 2s ease-in-out;
+    animation-delay: 2s;
     padding: 100px 21%;
 }
 
 .reviews .buttons {
     position: relative;
     max-width: 440px;
-    margin: -25% auto;
-    ;
+    margin: -20% auto;
+    animation: emergence 2s ease-in-out;
+    animation-delay: 5s;
     z-index: 15;
 }
 
@@ -600,6 +643,7 @@ blockquote {
 }
 
 .agregators .content {
+    animation: opacity 2s ease-in-out;
     padding: 100px 152px;
     max-width: 47%;
     color: #4E4E4E;
@@ -619,6 +663,7 @@ blockquote {
 
 .bg-agregators {
     position: absolute;
+    animation: opacity 1s ease-in-out;
     background-image: url('../img/bg-agregators.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -631,6 +676,7 @@ blockquote {
 
 .bg-agregators-grey {
     position: absolute;
+    animation: opacity 4s ease-in-out;
     background-image: url('../img/bg-agregators-grey.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -647,6 +693,7 @@ blockquote {
 }
 
 .food .content {
+    animation: opacity 4s ease-in-out;
     padding: 70px 152px;
     max-width: 77%;
     color: #fff;
